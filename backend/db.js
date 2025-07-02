@@ -1,7 +1,7 @@
     const mongoose = require('mongoose');
     const { Schema } = mongoose;
 
-    const url ="mongodb+srv://ADMIN:45ff4c3H@cluster0.c8u64.mongodb.net/paytm?retryWrites=true&w=majority&appName=Clusturl)er0"
+    const url =MONGO_URL
     mongoose.connect(url)
 
 
