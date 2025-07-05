@@ -1,7 +1,7 @@
 import React from 'react'
 import { Heading } from '../components/Heading'
 import { SubHeading } from '../components/SubHeading'
-import { InputBox } from '../components/Input'
+import { InputBox } from '../components/InputBox'
 import { Button } from '../components/Button'
 import { BottomWarning } from '../components/BottomWarning'
 import axios from 'axios'
@@ -25,8 +25,11 @@ export const Signin = () => {
         password: password
       });
       // Handle success (e.g., navigate to another page, show a message)
+      console.log('Signin successful:', response);
       console.log('Signin successful:', response.data);
-      navigate("/send");
+
+      localStorage.setItem('token', response.data.token); // Assuming the token is returned in the response
+      navigate("/Dashboard"); // Redirect to the dashboard after successful signin
     } catch (error) {
       // Handle error (e.g., show error message)
       console.error('Signin failed:', error.response?.data || error.message);

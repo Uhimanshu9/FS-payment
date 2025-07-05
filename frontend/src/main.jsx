@@ -8,6 +8,11 @@ import {  createBrowserRouter , RouterProvider} from "react-router";
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <Signin />,
+    errorElement: <div>Not Found</div>,
+  },
+  {
     path: "/signup",
     element: <Signup />,
     errorElement: <div>Not Found</div>,

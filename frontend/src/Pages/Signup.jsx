@@ -1,7 +1,7 @@
 import React from 'react'
 import { Heading } from '../components/Heading'
 import { SubHeading } from '../components/SubHeading'
-import { InputBox } from '../components/Input'
+import { InputBox } from '../components/InputBox'
 import { Button } from '../components/Button'
 import { BottomWarning } from '../components/BottomWarning'
 import axios from 'axios'
