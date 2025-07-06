@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     errorElement: <div>Not Found</div>,
   },
    {
-    path: "/send",
+    path: "/send/:id/:name",
     element: <Send />,
     errorElement: <div>Not Found</div>,
   },
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+
     <RouterProvider router={router} />
-  </React.StrictMode>,
+ 
 )
